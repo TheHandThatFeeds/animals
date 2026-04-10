@@ -45,4 +45,4 @@ export default function renderAnimalInfo(animal: IAnimal) {
   //                  Eating
   //Bonus om du skriver ut rubriken "Skills" med CSS.
   //=====================================================//
-}
+
