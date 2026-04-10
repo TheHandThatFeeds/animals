@@ -3,4 +3,16 @@
 //Varje list-item ska ha en event-lyssnare som kallar på "renderAnimalInfo"
 //Typa upp funktionens parameter
 
-export default function renderListOfAnimals(animals) {}
+import { IAnimal } from "./IAnimal";
+import renderAnimalInfo from "./renderAnimalInfo";
+
+export default function renderListOfAnimals(animals: IAnimal[]): void {
+  const animalList = document.getElementById("list-of-animals") as HTMLUListElement;
+
+  animals.forEach((animal) => {
+    const listItem = document.createElement("li");
+    listItem.textContent = animal.name;
+    listItem.addEventListener("click", () => renderAnimalInfo(animal));
+    animalList.appendChild(listItem);
+  });
+}

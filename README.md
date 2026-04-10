@@ -20,10 +20,10 @@
 
 ## 🛠️ Instruktioner
 
-- [ ] **1.** Analysera `data/data.json`  
+- [✅] **1.** Analysera `data/data.json`  
        Skapa ett interface i `modules/IAnimal.ts` som representerar datan
 
-- [ ] **2.** Gå till `modules/fetchAnimals.ts`  
+- [✅] **2.** Gå till `modules/fetchAnimals.ts`  
        Följ instruktionerna
 
 - [ ] **3.** Gå till `modules/renderListOfAnimals.ts`  
