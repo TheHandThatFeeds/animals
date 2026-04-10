@@ -1,1 +1,10 @@
-export interface Animal {}
+export interface IAnimal {
+  name: string;
+  kindOfAnimal: string;
+  job: string;
+  skills?: string | string[];
+  imageUrl: string;
+  birthYear: number;
+  employmentStartDate: string;
+  employmentEndDate?: string;
+}
