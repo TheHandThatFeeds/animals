@@ -3,6 +3,14 @@
     padding: 0;
 }
 
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #f0f0f0;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
 .list-of-animals {
     background-color: #f0f0f0;
     display: flex;
@@ -18,4 +26,12 @@
     padding: 10px;
     width: 200px;
     text-align: center;
+}
+
+.age-label,
+.skills-label {
+    color: #4b4b4b;
+    font-size: 0.95rem;
+    font-weight: bold;
+    margin-top: 10px;
 }

@@ -26,7 +26,7 @@
 - [✅] **2.** Gå till `modules/fetchAnimals.ts`  
        Följ instruktionerna
 
-- [ ] **3.** Gå till `modules/renderListOfAnimals.ts`  
+- [✅] **3.** Gå till `modules/renderListOfAnimals.ts`  
        Följ instruktionerna
 
 - [ ] **4.** Gå till `modules/renderAnimalInfo.ts`  
