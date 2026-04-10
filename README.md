@@ -29,8 +29,8 @@
 - [✅] **3.** Gå till `modules/renderListOfAnimals.ts`  
        Följ instruktionerna
 
-- [ ] **4.** Gå till `modules/renderAnimalInfo.ts`  
+- [✅] **4.** Gå till `modules/renderAnimalInfo.ts`  
        Följ instruktionerna  
        _Här kommer det mesta av ditt arbete att göras_
 
-- [ ] **5.** Styla enligt `mockups`
+- [✅] **5.** Styla enligt `mockups`
