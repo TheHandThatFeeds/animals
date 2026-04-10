@@ -11,12 +11,12 @@ export default function renderAnimalInfo(animal) {
     const skillsArray = Array.isArray(animal.skills) ? animal.skills : animal.skills ? [animal.skills] : [];
     const skillsHTML = skillsArray.map(skill => `<li>${skill}</li>`).join("");
     animalInfoContainer.innerHTML = `
-    <img src="images/${animal.imageUrl}" alt="${animal.name} the ${animal.kindOfAnimal}"/>
-    <p>${animal.name} the ${animal.kindOfAnimal}</p>
-    <p>${animal.job} - ${isEmployed}</p>
-    <p><span class="age-label">Age:</span> ${age} years old.</p>
-    ${skillsArray.length > 0 ? `<p><span class="skills-label">Skills:</span></p>
-      <ul>${skillsHTML}</ul>` : ""}
+    <img src="./images/${animal.imageUrl}" alt="${animal.name} the ${animal.kindOfAnimal}"/>
+    <p class="animal-name">${animal.name} the ${animal.kindOfAnimal}</p>
+    <p class="animal-job">${animal.job} - ${isEmployed}</p>
+    <p class="animal-age"><span class="age-label">Age:</span> ${age} years old.</p>
+    ${skillsArray.length > 0 ? `<p class="skills-label">Skills:</p>
+      <ul class="animal-skills">${skillsHTML}</ul>` : ""}
   `;
 }
 //=====================================================//

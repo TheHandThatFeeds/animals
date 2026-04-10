@@ -1,37 +1,115 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     font-family: 'Courier New', Courier, monospace;
-    background-color: #f0f0f0;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
+    background-color: #d0d0d0;
+    min-height: 100vh;
 }
 
+/* Navbar med list of animals */
+
 .list-of-animals {
-    background-color: #f0f0f0;
+    background-color: #d0d0d0;
+    padding: 16px 24px;
+}
+
+.list-of-animals ul {
+    list-style: none;
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
-    padding: 20px;
+    gap: 12px;
+}
+
+.list-of-animals ul li {
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 2px 4px;
+}
+
+.list-of-animals ul li:hover {
+    text-decoration: underline;
+}
+
+/* Information om vare enskilt djur, centrerat */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
 }
 
 .animal-info {
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 10px;
-    width: 200px;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
 }
 
+/* Den runda bilden för alla djuren */
+.animal-info img {
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 6px solid #ffff;
+    margin-bottom: 20px;
+}
+
+/* Namnen på djuren — exempelvis Benny the Bear */
+.animal-name  {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.3rem;
+    color: #4b4b4b;
+    margin-bottom: 14px;
+}
+
+/* Djurens arbetstitel och anställningsstatus */
+.animal-job {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    align-self: flex-start;
+    margin-bottom: 8px;
+}
+
+/* Djurens aktuella ålder */
+.animal-age {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    align-self: flex-start;
+    margin-bottom: 14px;
+}
+
+/* Ålder och skills i grått */
 .age-label,
 .skills-label {
     color: #4b4b4b;
-    font-size: 0.95rem;
+    font-weight: normal;
+}
+
+/* Djurens skills */
+.skills-label {
+    align-self: flex-start;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    margin-bottom: 4px;
+}
+
+.animal-skills {
+    list-style: none;
+    align-self: flex-start;
+}
+
+.animal-skills li {
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    margin-top: 10px;
+    font-size: 1rem;
+    line-height: 1.8;
 }

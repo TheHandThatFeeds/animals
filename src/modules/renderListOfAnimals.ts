@@ -4,10 +4,10 @@
 //Typa upp funktionens parameter
 
 import { IAnimal } from "./IAnimal";
-import renderAnimalInfo from "./renderAnimalInfo";
+import renderAnimalInfo from "./renderAnimalInfo.js";
 
 export default function renderListOfAnimals(animals: IAnimal[]): void {
-  const animalList = document.getElementById("list-of-animals") as HTMLUListElement;
+  const animalList = document.querySelector("#list-of-animals ul") as HTMLUListElement;
 
   animals.forEach((animal) => {
     const listItem = document.createElement("li");
